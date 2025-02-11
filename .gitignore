@@ -5,11 +5,31 @@
 /tmp
 /out-tsc
 /bazel-out
+dist
 
 # Node
 /node_modules
 npm-debug.log
 yarn-error.log
+lerna-debug.log*
+.pnpm-debug.log*
+.pnp.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
 # IDEs and editors
 .idea/
@@ -28,15 +48,85 @@ yarn-error.log
 !.vscode/extensions.json
 .history/*
 
+# TypeScript cache
+*.tsbuildinfo
+
 # Miscellaneous
 /.angular/cache
 .sass-cache/
-/connect.lock
+.connect.lock
 /coverage
+*.lcov
+.nyc_output
+.libpeerconnection.log
+testem.log
+typings
 /libpeerconnection.log
 testem.log
-/typings
+typings
 
 # System files
 .DS_Store
 Thumbs.db
+
+# Dependency directories
+jspm_packages/
+bower_components
+web_modules/
+
+# Optional npm/yarn cache directories
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.yarn-integrity
+
+# Optional caches
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.node_repl_history
+
+# Parcel cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+
+# Gatsby files
+.cache/
+# public  # Uncomment if using Gatsby and not Next.js
+
+# vuepress build output
+.vuepress/dist
+
+# vuepress v2.x temp and cache directory
+.temp
+.cache
+
+# Docusaurus cache and generated files
+.docusaurus
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# VSCode test directories
+.vscode-test
