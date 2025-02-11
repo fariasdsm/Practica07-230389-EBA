@@ -1,0 +1,20 @@
+<button (click)="greet()">Saludar</button>
+
+<br>
+
+<section (mouseover)="onMouseOver()" (mouseout)="onMouseOut()" style="background-color: indigo; color: white; margin: 15px 50px; padding: 30px; border-radius: 10px;">
+    There's a secrect message here. Hover over me to see it.
+    <span style="
+  background-color: aliceblue; 
+  color: indigo; 
+  border-radius: 5px; 
+  padding: 5px 10px; 
+  font-weight: bold; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+  display: inline-block; 
+  margin-top: 10px; 
+  transition: all 0.3s ease;
+">
+  {{ message }}
+</span>
+</section>
